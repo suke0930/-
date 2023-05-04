@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: aqua;
+            width: 100%;
+            height: 100%;
+        }
+
+        .pad {
+            display: inline-flexbox;
+            position: fixed;
+            width: 1000px;
+            height: 1000px;
+            margin-left: 50px;
+            margin-right: 50px;
+            /* background-color: brown; */
+
+        }
+
+        .adr {
+            position: absolute;
+            width: 100px;
+            height: 80px;
+            left: 250px;
+
+        }
+
+        .test {
+            font-size: 2em;
+            position: absolute;
+            font-weight: bold;
+            top: 15px;
+            left: 100px;
+            width: 30%;
+            height: 30%;
+        }
+
+        .test2 {
+            font-weight: bold;
+            position: absolute;
+            font-size: 2em;
+            top: 15px;
+            right: 20px;
+
+        }
+
+        .tinpo {
+            visibility: hidden;
+            position: absolute;
+            border-radius: 18px;
+            right: 0px;
+            width: 280px;
+            height: 81px;
+        }
+
+        .tiida2 {
+            visibility: hidden;
+            position: absolute;
+            width: 250px;
+            height: 81px;
+            border-radius: 18px;
+
+        }
+
+        .adduser {
+            visibility: hidden;
+            position: fixed;
+            top: 100px;
+            width: 640px;
+            height: 480px;
+        }
+
+        .pre {
+            position: absolute;
+            left: 40%;
+            width: 80px;
+            height: 80px;
+        }
+
+        .add2 {
+            position: fixed;
+            width: 640px;
+            top: 100px;
+            height: 480px;
+        }
+
+        .cake {
+            position: absolute;
+            top: 0px;
+            width: 90px;
+            height: 90px;
+        }
+
+        .cake2 {
+            right: 0px;
+            position: absolute;
+            width: 90px;
+            height: 90px;
+        }
+
+        .tanzyoubi {
+            position: fixed;
+            width: 640px;
+            height: 80px;
+            background-color: white;
+            border-radius: 20px;
+            border: 3px black solid;
+        }
+
+        .adt {
+            z-index: 10;
+            position: absolute;
+            left: 41%;
+            margin-top: 5px;
+        }
+
+        .btntida {
+            position: absolute;
+            /* visibility: hidden; */
+            width: 100px;
+            height: 200px;
+            top: -50px;
+            margin: 0px, 0pxs;
+            z-index: 15;
+            left: 250px;
+            visibility: hidden;
+
+
+        }
+    </style>
+    <script>
+        window.addEventListener('load', () => {
+            const adduser = document.querySelector(".adduser")
+            const adr = document.querySelector(".adr")
+            const video = document.querySelector(".video")
+            const fake = document.querySelector(".add2")
+            const tiida2 = document.querySelector(".tiida2")
+            const tinpo = document.querySelector(".tinpo")
+            const cake = document.querySelector(".cake")
+            const cake2 = document.querySelector(".cake2")
+            const pre = document.querySelector(".pre")
+            const push = document.querySelector(".adt")
+            const btntida = document.querySelector(".btntida")
+            btntida.addEventListener('click', asshole, false);
+            adr.addEventListener('click', asshole, false);
+            pre.addEventListener('click', asshole, false);
+            push.addEventListener('click', asshole, false);
+
+
+            function asshole() {
+                //ボタンが押された処理
+                fake.style.visibility = 'hidden';
+                cake.style.visibility = 'hidden';
+                cake2.style.visibility = 'hidden';
+                tiida2.style.visibility = 'visible';
+                tinpo.style.visibility = 'visible';
+                btntida.style.visibility = 'visible';
+                adduser.style.visibility = 'visible';
+                btntida.play()
+                console.log("ser");
+                // document.querySelector(".test").innerText = "ティーダのチンポ気持ち良すぎだろ！";
+                adduser.play()
+            }
+        }); 
+    </script>
+</head>
+
+<body>
+    <span class="pad">
+        <span class="tanzyoubi">
+            <span class="test">誕生日</span>
+            <button class="adr"></button>
+            <p class="adt">PUSH ME!</p>
+            <span class="test2">おめっと！！！！</span>
+            <span class="thida">
+                <!-- ティダチン -->
+
+                <img class="tiida2" src="tiida.png">
+                <img class="cake" src="illustkun-02817-birthday-cake.png">
+                <img class="cake2" src="illustkun-02817-birthday-cake.png">
+                <img class="tinpo" src="tinpo.png">
+                <img class="pre" src="purezennto-illust3.png">
+                <video loop muted class="btntida" src="a.mp4"></video>
+            </span>
+        </span>
+
+
+
+        <span class="video"></span>
+        <br>
+
+        <video loop src="a.mp4" class="adduser"></video>
+        <video loop mute muted autoplay src="aa2.mp4" class="add2"></video>
+    </span>
+</body>
+
+</html>
